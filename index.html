@@ -21,10 +21,11 @@
 						<ul>
 							<li><a href="#intro">About me</a></li>
 							<li><a href="#myresearch">My Research</a></li>
-							<li><a href="#eecs494p1">Game P1 - Legend of Zelda</a></li>
+							<li><a href="#projects">Personal Projects</a></li>
+							<li><a href="#eecs494p1">My Games</a></li>
+							<!--<li><a href="#eecs494p1">Game P1 - Legend of Zelda</a></li>
 							<li><a href="#eecs494p2">Game P2 - Be Artist</a></li>
-							<li><a href="#eecs494p3">Game P3 - AntiVirus</a></li>
-                            <li><a href="#four">Other Courseworks</a></li>
+							<li><a href="#eecs494p3">Game P3 - AntiVirus</a></li>-->
 						</ul>
 					</nav>
 				</div>
@@ -41,23 +42,113 @@
 							<h2>About me</h2>
 							<p STYLE="margin: 0 0 1em 0">Hi, I am Lechen! Currently I am a second-year master student in <a href="https://umich.edu/" target="_blank">University of Michigan</a>. I received my bachelor's degree at <a href="https://en.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>.</p>
 							<p>I am interested in various topics in NLP (Natural Language Processing), particularly in building robust and trustworthy Language Models that can better understand humans. Currently I am a Research Assistant in <a href="https://blablablab.si.umich.edu/" target="_blank">Blablablab</a>, advised by <a href="https://jurgens.people.si.umich.edu/" target="_blank">David Jurgens</a>. </p>
-							<ul class="actions">
+							<!--<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
+							</ul>-->
 						</div>
 					</section>
 				
 				<!-- MyResearch -->
 				<section id="myresearch" class="wrapper style2 fullscreen fade-up">
-					<div class="inner">
+					<div class="inner" style="width:90%;">
 						<h2>My Research</h2>
-						<p>TO BE UPDATED SOON</p>
+						<p>My primary research interests are in Natural Language Processing (NLP), particularly in making
+							Large Language Models (LLMs) more safe and reliable to humans. I hope my efforts on more
+							stable LLMs can contribute significantly to societal equity and development. Meanwhile, I am
+							also interested in making LLMs have a better understanding of the humans, and develop models
+							that can understand, think, and behave as humans, thereby proactively mitigating potential safety
+							concerns in the future.</p>
+						<hr />
+						<h2>Publications</h2> 
+						<section>
+							<h4>You don't need a personality test to know these models are unreliable: <br />
+							Assessing the Reliability of Large Language Models on Psychometric Instruments</h4>
+							<p>Bangzhao Shu*, <b>Lechen Zhang*</b>, Minje Choi, Lavinia Dunagan, Dallas Card, David Jurgens <br />
+								Under Review of <b>NAACL 2024</b>
+							</p>
+							<ul class="actions">
+								<li><a href="https://arxiv.org/abs/2311.09718" class="button primary" target="_blank">Preprint Paper</a></li>
+								<li><a href="https://github.com/orange0629/llm-personas" class="button">Code Repo</a></li>
+							</ul>
+						</section>
+						<hr />
 					</div>
 				</section>
 
+				<!-- MyProjects -->
+				<section id="projects" class="wrapper style1 spotlights">
+					<section id="si630">
+						<a href="#" class="image"><img src="Portfolio/SI630/si630.png" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Tourist Destination Introduction Generation Language Model based on Fine-tuned Flan-T5</h2>
+								<p>The project builds a generative language model which can automatically generate the introduction of tourist destinations based on the reviews from tourists. The model uses the sentence transformer and TextRank algorithm to find and pick up important sentences, and then used finetuned Flan-T5 model with appropriate prompts to encode and decode into an objective, highly generalized introduction.</p>
+								<ul class="actions">
+									<li><a href="Portfolio/SI630/SI630_Project_Report_leczhang.pdf" class="button primary" target="_blank">Project Report</a></li>
+									<li><a href="https://github.com/orange0629/si630proj" class="button" target="_blank">Github Repo</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section id="si650">
+						<a href="#" class="image"><img src="Portfolio/SI650/si650.png" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Tourist Destination Search Engine based on PyTerrier</h2>
+								<p>A smart search engine that can retrieve tourist destinations based on abstract queries using reviews and descriptions crawled on TripAdvisor. The search engine used Query Expansion, BM25, BERT, and feature-based Machine Learning Reranking to improve its performance on MAP and NDCG.</p>
+								<ul class="actions">
+									<li><a href="Portfolio/SI650/si650_Final_Report_leczhang_ourox.pdf" class="button primary" target="_blank">Project Report</a></li>
+									<li><a href="https://github.com/orange0629/si650project" class="button" target="_blank">Github Repo</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section id="si618">
+						<a href="#" class="image"><img src="Portfolio/SI618/si618.png" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>The Criminal Incidents Data Analysis of New York</h2>
+								<p>A Data Analysis Report based on factors and patterns in New York City crime data (like crime time, place, type, criminal and victim characteristics). The project uses SparkSQL to deal with multiple large dataset, uses Pandas to do further analysis, and uses matplotlib, Seaborn, PlotNine to visualize the results, in order to find out the influential factors and patterns of crimes.</p>
+								<ul class="actions">
+									<li><a href="Portfolio/SI618/si618-project-part1.pdf" class="button primary" target="_blank">Report Part1</a></li>
+									<li><a href="Portfolio/SI618/si618-project-part2.pdf" class="button primary" target="_blank">Report Part2</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<!--<section id="si568">
+						<a href="#" class="image"><img src="Portfolio/SI568/si568.png" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Word Adventure Game based on ChatGPT API</h2>
+								<p>A simple application of ChatGPT API to develop a word adventure game. It is an open world game, but the world is supervised by ChatGPT with basic world settings. The world is full of NPCs of different identities and personalities, and players can either talk to them to get useful information or turn against them. Any behaviors of player will lead to different possibilities. Players are free to create their own story line in every play.</p>
+								<ul class="actions">
+									<li><a href="Portfolio/SI568/si568_project_report_leczhang.pdf" class="button primary" target="_blank">Project Report</a></li>
+									<li><a href="https://github.com/orange0629/si568_project" class="button" target="_blank">Github Repo</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section id="si507">
+						<a href="#" class="image"><img src="Portfolio/SI507/si507.png" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Restaurant recommendation system based on cuisine similarity</h2>
+								<p>A simple graph based recommendation system based on the crawled restaurant data on TripAdvisor. Use BeautifulSoup to extract restaurant data from html, then use json to cache them, and finally use Flask to visualize recommendation results in website interface.</p>
+								<ul class="actions">
+									<li><a href="https://drive.google.com/file/d/1ZlLiZiuU8p55kWTaD3lbSFzMAPKqg71X/view" class="button primary">Demo Video</a></li>
+									<li><a href="Portfolio/SI507/leczhang_si507_project_report.pdf" class="button primary" target="_blank">Project Report</a></li>
+									<li><a href="https://github.com/orange0629/si507project" class="button" target="_blank">Github Repo</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>-->
+				</section>
+
 				<!-- One -->
-                <section id="eecs494p1" class="wrapper style4 fade-up">
+                <section id="eecs494p1" class="wrapper style2 fade-up">
                     <div class="inner">
+						<h1>My Games</h1>
                         <h2>Legend of Zelda (Remaster)</h2>
 						<p>This project is finished with my groupmate Connor Young in 3 weeks.</p>
                         <div class="features">
@@ -164,7 +255,7 @@
                 </section>
 
 			<!-- Three -->
-			<section id="eecs494p3" class="wrapper style1 fade-up">
+			<section id="eecs494p3" class="wrapper style2 fade-up">
 				<div class="inner">
 					<h2>AntiVirus</h2>
 					<p>This project is finished with my groupmates in <i>Unproductive Production</i> (Connor Young, Kate Kim, Vincent Ma) in 4 weeks.</p>
@@ -226,76 +317,7 @@
 				</div>
 			</section>
 
-
-                <!-- Four -->
-					<section id="four" class="wrapper style2 spotlights">
-						<section id="si630">
-							<a href="#" class="image"><img src="Portfolio/SI630/si630.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Tourist Destination Introduction Generation Language Model based on Fine-tuned Flan-T5</h2>
-									<p>The project builds a generative language model which can automatically generate the introduction of tourist destinations based on the reviews from tourists. The model uses the sentence transformer and TextRank algorithm to find and pick up important sentences, and then used finetuned Flan-T5 model with appropriate prompts to encode and decode into an objective, highly generalized introduction.</p>
-									<ul class="actions">
-										<li><a href="Portfolio/SI630/SI630_Project_Report_leczhang.pdf" class="button primary">Project Report</a></li>
-										<li><a href="https://github.com/orange0629/si630proj" class="button">Github Repo</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section id="si650">
-							<a href="#" class="image"><img src="Portfolio/SI650/si650.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Tourist Destination Search Engine based on PyTerrier</h2>
-									<p>A smart search engine that can retrieve tourist destinations based on abstract queries using reviews and descriptions crawled on TripAdvisor. The search engine used Query Expansion, BM25, BERT, and feature-based Machine Learning Reranking to improve its performance on MAP and NDCG.</p>
-									<ul class="actions">
-										<li><a href="Portfolio/SI650/si650_Final_Report_leczhang_ourox.pdf" class="button primary">Project Report</a></li>
-										<li><a href="https://github.com/orange0629/si650project" class="button">Github Repo</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section id="si618">
-							<a href="#" class="image"><img src="Portfolio/SI618/si618.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>The Criminal Incidents Data Analysis of New York</h2>
-									<p>A Data Analysis Report based on factors and patterns in New York City crime data (like crime time, place, type, criminal and victim characteristics). The project uses SparkSQL to deal with multiple large dataset, uses Pandas to do further analysis, and uses matplotlib, Seaborn, PlotNine to visualize the results, in order to find out the influential factors and patterns of crimes.</p>
-									<ul class="actions">
-										<li><a href="Portfolio/SI618/si618-project-part1.pdf" class="button primary">Report Part1</a></li>
-										<li><a href="Portfolio/SI618/si618-project-part2.pdf" class="button primary">Report Part2</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section id="si568">
-							<a href="#" class="image"><img src="Portfolio/SI568/si568.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Word Adventure Game based on ChatGPT API</h2>
-									<p>A simple application of ChatGPT API to develop a word adventure game. It is an open world game, but the world is supervised by ChatGPT with basic world settings. The world is full of NPCs of different identities and personalities, and players can either talk to them to get useful information or turn against them. Any behaviors of player will lead to different possibilities. Players are free to create their own story line in every play.</p>
-									<ul class="actions">
-										<li><a href="Portfolio/SI568/si568_project_report_leczhang.pdf" class="button primary">Project Report</a></li>
-										<li><a href="https://github.com/orange0629/si568_project" class="button">Github Repo</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section id="si507">
-							<a href="#" class="image"><img src="Portfolio/SI507/si507.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Restaurant recommendation system based on cuisine similarity</h2>
-									<p>A simple graph based recommendation system based on the crawled restaurant data on TripAdvisor. Use BeautifulSoup to extract restaurant data from html, then use json to cache them, and finally use Flask to visualize recommendation results in website interface.</p>
-									<ul class="actions">
-										<li><a href="https://drive.google.com/file/d/1ZlLiZiuU8p55kWTaD3lbSFzMAPKqg71X/view" class="button primary">Demo Video</a></li>
-										<li><a href="Portfolio/SI507/leczhang_si507_project_report.pdf" class="button primary">Project Report</a></li>
-										<li><a href="https://github.com/orange0629/si507project" class="button">Github Repo</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+                
 				
 
 		<!-- Footer -->
